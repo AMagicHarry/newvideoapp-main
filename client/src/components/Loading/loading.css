@@ -1,0 +1,52 @@
+/* body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  user-select: none;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+} */
+section {
+  width: 50px;
+  height: 350px;
+}
+section svg {
+  max-width: 100%;
+}
+section svg path {
+  display: none;
+}
+#path-1,
+#path-2,
+#path-3 {
+  display: initial;
+}
+
+.bar1 {
+  width: 0px;
+  height: 6px;
+  background-image: linear-gradient(
+    -35deg,
+    #5468ff 0%,
+    #a9b3ff 50%,
+    #97fff9 80%,
+    #00d9cd 100%
+  );
+  z-index: 1;
+  animation: bar1 5s ease-out infinite;
+}
+
+@keyframes bar1 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 1700px;
+  }
+}
